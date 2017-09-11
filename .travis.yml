@@ -1,0 +1,13 @@
+language: python
+python: "3.3"
+
+branches:
+  only:
+    - gh-pages
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq python3 dos2unix librsvg2-bin optipng
+
+script:
+  - update.sh
